@@ -48,9 +48,9 @@ export default function Education() {
   ];
   return (
     <div id="education">
-      <h3 className=" text-sky-500 text-6xl font-bold text-center">
+      {/* <h3 className=" text-sky-500 text-6xl font-bold text-center">
         Education
-      </h3>
+      </h3> */}
       <div className="flex  justify-center p-20 gap-8 ">
         <div className="flex items-center justify-center flex-col h-full ">
           <h3 className="text-sky-100 text-4xl font-bold text-center">

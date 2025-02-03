@@ -10,12 +10,14 @@ import { Spotlight } from "@/components/ui/spotlight-new";
 import { StarsBackground } from "@/components/ui/stars-background";
 import { menuItens, teckItens } from "../../data";
 import Education from "@/components/Education";
+import Grid from "@/components/Grid";
 
 export default function Home() {
   return (
-    <main className="w-full md:items-center md:justify-center antialiased relative overflow-hidden">
+    <main className="  w-full md:items-center md:justify-center antialiased relative overflow-hidden">
       <FloatingNav navItems={menuItens} />
       <Hero />
+      <Grid />
       <Approach />
       <Education />
       <HeroParallax products={teckItens} />
