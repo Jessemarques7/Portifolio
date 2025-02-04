@@ -5,8 +5,6 @@ import { IoCopyOutline } from "react-icons/io5";
 
 // Also install this npm i --save-dev @types/react-lottie
 // import Lottie from "react-lottie";
-import dynamic from "next/dynamic";
-const Lottie = dynamic(() => import("react-lottie"), { ssr: false });
 
 import { cn } from "../../../lib/utils";
 
@@ -15,8 +13,6 @@ import GridGlobe from "./GridGlobe";
 import animationData from "../../../data/confetti.json";
 import MagicButton from "../MagicButton";
 import { Cover } from "./cover";
-
-// fuuuuuuck
 
 export const BentoGrid = ({
   className,
@@ -63,14 +59,14 @@ export const BentoGridItem = ({
 
   const [copied, setCopied] = useState(false);
 
-  const defaultOptions = {
-    loop: copied,
-    autoplay: copied,
-    animationData: animationData,
-    rendererSettings: {
-      preserveAspectRatio: "xMidYMid slice",
-    },
-  };
+  // const defaultOptions = {
+  //   loop: copied,
+  //   autoplay: copied,
+  //   animationData: animationData,
+  //   rendererSettings: {
+  //     preserveAspectRatio: "xMidYMid slice",
+  //   },
+  // };
 
   const handleCopy = () => {
     const text = "hsu@jsmastery.pro";
@@ -196,7 +192,7 @@ export const BentoGridItem = ({
                 }`}
               >
                 {/* <img src="/confetti.gif" alt="confetti" /> */}
-                <Lottie options={defaultOptions} height={200} width={400} />
+                {/* <Lottie options={defaultOptions} height={200} width={400} /> */}
               </div>
 
               <MagicButton
