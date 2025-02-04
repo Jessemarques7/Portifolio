@@ -17,7 +17,7 @@ export default function Home() {
     <main className="  w-full md:items-center md:justify-center antialiased relative overflow-hidden">
       <FloatingNav navItems={menuItens} />
       <Hero />
-      <Grid />
+      {/* <Grid /> */}
       <Approach />
       <Education />
       <HeroParallax products={teckItens} />
