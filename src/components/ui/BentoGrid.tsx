@@ -61,14 +61,14 @@ export const BentoGridItem = ({
 
   const [copied, setCopied] = useState(false);
 
-  // const defaultOptions = {
-  //   loop: copied,
-  //   autoplay: copied,
-  //   animationData: animationData,
-  //   rendererSettings: {
-  //     preserveAspectRatio: "xMidYMid slice",
-  //   },
-  // };
+  const defaultOptions = {
+    loop: copied,
+    autoplay: copied,
+    animationData: animationData,
+    rendererSettings: {
+      preserveAspectRatio: "xMidYMid slice",
+    },
+  };
 
   const handleCopy = () => {
     const text = "hsu@jsmastery.pro";
@@ -144,7 +144,7 @@ export const BentoGridItem = ({
               <h1 className="text-[32px]  font-semibold max-w-7xl mb-14 text-center mt-6 relative z-20 py-6 bg-clip-text text-transparent bg-gradient-to-b from-neutral-800 via-neutral-700 to-neutral-700 dark:from-neutral-800 dark:via-white dark:to-white">
                 I Build amazing websites
                 <br />
-                {/* at <Cover>warp speed</Cover> */}
+                at <Cover>warp speed</Cover>
               </h1>
             )}
           </div>
@@ -194,7 +194,7 @@ export const BentoGridItem = ({
                 }`}
               >
                 {/* <img src="/confetti.gif" alt="confetti" /> */}
-                {/* <Lottie options={defaultOptions} height={200} width={400} /> */}
+                <Lottie options={defaultOptions} height={200} width={400} />
               </div>
 
               <MagicButton
